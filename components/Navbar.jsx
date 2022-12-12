@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Link from 'next/link';
-import { FaBars, FaCar, FaMoon, FaPhone, FaSun } from 'react-icons/fa';
-import { BsEnvelope } from 'react-icons/bs';
+import {FaBars, FaCar, FaMoon, FaPhone, FaSun} from 'react-icons/fa';
+import {BsEnvelope} from 'react-icons/bs';
 import useTheme from 'next-theme';
 import SocialIcon from './SocialIcon';
 import AccountDropDown from './AccountDropDown';
-import { navItems } from '../utils/constans';
+import {navItems} from '../utils/constans';
 
 const MenuItems = ({ Style }) => (
   <div className={`flex ${Style}`}>
@@ -84,7 +84,7 @@ const Navbar = () => {
       </div>
 
       <nav
-        className="h-10 bg-cr-black dark:bg-cr-white hidden md:flex justify-between items-center px-12 py-2 sticky top-0 shadow-lg"
+        className="h-10 bg-cr-black dark:bg-cr-white hidden md:flex justify-between items-center px-12 py-2 sticky top-0 shadow-lg z-40"
       >
         <div className=" ">
           <MenuItems Style="flex-row" />
