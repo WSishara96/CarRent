@@ -1,7 +1,7 @@
 import React from 'react';
 
 const about = () => (
-  <div className='min-h-[60vh]'>
+  <div className='min-h-[60vh] dark:text-cr-white'>
     <h1 className="text-4xl font-bold text-center my-10">About Us</h1>
 
     <p className="text-justify px-5 md:px-20 mb-3">

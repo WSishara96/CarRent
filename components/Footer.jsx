@@ -7,7 +7,7 @@ const Footer = () => (
  <div>
      <div className='px-10 flex flex-col md:flex-row items-center my-2'>
          {footerBanners.map((item)=>(
-             <div key={item.title} className='w-full h-14 md:w-1/3 px-1 flex flex-row items-center'>
+             <div key={item.title} className='w-full h-14 md:w-1/3 px-1 flex flex-row items-center dark:text-cr-white'>
                  <div className='mr-2'>
                      <img src={item.icon} className='h14 w-14' alt={item.title} />
                  </div>
@@ -18,8 +18,8 @@ const Footer = () => (
              </div>
          ))}
      </div>
-     <div className="flex flex-col md:flex-row justify-between items-center py-3 px-10 bg-cr-black dark:bg-cr-white">
-         <div className="gap-3 flex flex-row text-gray-300">
+     <div className="flex flex-col md:flex-row justify-between items-center py-3 px-10 bg-cr-black dark:bg-cr-white ">
+         <div className="gap-3 flex flex-row text-gray-300 dark:text-gray-800">
              {footerNavItems.map((item) => (
                  <Link href={item.link} key={item.name}>{item.name}</Link>
              ))}
