@@ -4,7 +4,7 @@ import {FaFacebookSquare, FaInstagramSquare, FaTwitter, FaYoutube} from 'react-i
 
 const SocialIcon = ({iconAlign}) => (
   <div className={`flex row ${iconAlign ? iconAlign : 'justify-end'} items-center `}>
-    <Link href="/" className="mx-2 text-gray-600 dark:text-gray-100 dark:hover:text-gray-600 hover:text-black duration-500"><FaFacebookSquare /></Link>
+    <Link href="/" className="mr-2 text-gray-600 dark:text-gray-100 dark:hover:text-gray-600 hover:text-black duration-500"><FaFacebookSquare /></Link>
     <Link href="/" className="mx-2 text-gray-600 dark:text-gray-100 dark:hover:text-gray-600 hover:text-black duration-500"><FaTwitter /></Link>
     <Link href="/" className="mx-2 text-gray-600 dark:text-gray-100 dark:hover:text-gray-600 hover:text-black duration-500"><FaYoutube /></Link>
     <Link href="/" className="mx-2 text-gray-600 dark:text-gray-100 dark:hover:text-gray-600 hover:text-black duration-500"><FaInstagramSquare /></Link>
