@@ -11,7 +11,7 @@ const contact = () => (
             allowFullScreen=""
             loading="lazy">
         </iframe>
-        <div className="flex flex-col md:flex-row w-full px-10">
+        <div className="flex flex-col md:flex-row w-full px-3 md:px-10">
             <div className="flex flex-col w-full md:w-1/2 my-5 px-2">
                 <h2 className='text-2xl font-bold my-2'>Contact Us</h2>
                 <p className='my-1'>There are many ways to contact us. You may drop us a line, give us a call or send an
