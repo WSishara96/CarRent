@@ -1,7 +1,13 @@
-import '../styles/globals.css'
+import '../styles/globals.scss';
+import { ThemeProvider } from 'next-theme';
+import Layout from '../components/Layout';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const MyApp = ({ Component, pageProps }) => (
+  <ThemeProvider attribute="class">
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  </ThemeProvider>
+);
 
-export default MyApp
+export default MyApp;

@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// general style
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-cs-white {
+  background: #fffffe;
+}
+
+.bg-cs-black {
+  background: #1e1e27;
+  opacity: 1;
+}
+
+.cr-h-nav {
+  min-height: calc(100vh - 8.5rem);
+}
+
+// theme change button
+.checkbox:checked + .label .ball{
+  transform: translateX(16px);
+}
