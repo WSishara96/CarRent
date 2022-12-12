@@ -18,10 +18,6 @@
   opacity: 1;
 }
 
-.cr-h-nav {
-  min-height: calc(100vh - 8.5rem);
-}
-
 // theme change button
 .checkbox:checked + .label .ball{
   transform: translateX(16px);
