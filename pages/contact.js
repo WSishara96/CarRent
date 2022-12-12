@@ -11,8 +11,8 @@ const contact = () => (
             allowFullScreen=""
             loading="lazy">
         </iframe>
-        <div className="flex flex-row w-full px-10">
-            <div className="flex flex-col w-1/2 my-5 px-2">
+        <div className="flex flex-col md:flex-row w-full px-10">
+            <div className="flex flex-col w-full md:w-1/2 my-5 px-2">
                 <h2 className='text-2xl font-bold my-2'>Contact Us</h2>
                 <p className='my-1'>There are many ways to contact us. You may drop us a line, give us a call or send an
                     email, choose what suits you the most.</p>
@@ -29,7 +29,7 @@ const contact = () => (
                 <h2 className='text-2xl font-bold my-2'>Follow Us</h2>
                 <SocialIcon iconAlign='justify-start'/>
             </div>
-            <div className="flex flex-col w-1/2 my-5 px-2">
+            <div className="flex flex-col w-ful md:w-1/2 my-5 px-2">
                 <h2 className='text-2xl font-bold my-2'>Get In Touch With Us!</h2>
                 <p className="my-1">
                     Fill out the form below to recieve a free and confidential.
