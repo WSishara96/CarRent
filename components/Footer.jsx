@@ -5,11 +5,11 @@ import {footerBanners, footerNavItems} from '../utils/constans';
 
 const Footer = () => (
  <div>
-     <div className='px-10 flex flex-col md:flex-row items-center my-2'>
+     <div className='px-3 md:px-10 flex flex-col md:flex-row items-center my-2'>
          {footerBanners.map((item)=>(
-             <div key={item.title} className='w-full h-14 md:w-1/3 px-1 flex flex-row items-center dark:text-cr-white'>
+             <div key={item.title} className='w-full h-14 md:w-1/3 px-1 flex flex-row items-center mb-2 dark:text-cr-white'>
                  <div className='mr-2'>
-                     <img src={item.icon} className='h14 w-14' alt={item.title} />
+                     <img src={item.icon} className='h-14 w-14' alt={item.title} />
                  </div>
                  <div className='flex flex-col justify-start items-start h-14'>
                      <h5 className='text-sm font-semibold capitalize'>{item.title}</h5>
