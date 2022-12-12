@@ -9,7 +9,7 @@ const Footer = () => (
          {footerBanners.map((item)=>(
              <div key={item.title} className='w-full h-14 md:w-1/3 px-1 flex flex-row items-center mb-2 dark:text-cr-white'>
                  <div className='mr-2'>
-                     <img src={item.icon} className='h-14 w-14' alt={item.title} />
+                     <img src={item.icon} className='h-10 w-10 md:h-14 md:w-14' alt={item.title} />
                  </div>
                  <div className='flex flex-col justify-start items-start h-14'>
                      <h5 className='text-sm font-semibold capitalize'>{item.title}</h5>
