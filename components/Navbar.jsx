@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
-import {FaBars, FaCar, FaMoon, FaPhone, FaSun} from 'react-icons/fa';
+import {FaBars, FaCar, FaPhone} from 'react-icons/fa';
 import {BsEnvelope} from 'react-icons/bs';
-import useTheme from 'next-theme';
 import SocialIcon from './SocialIcon';
 import AccountDropDown from './AccountDropDown';
 import {navItems} from '../utils/constans';
+import ThemeBtn from "./ThemeBtn";
 
 const MenuItems = ({ Style }) => (
   <div className={`flex ${Style}`}>
@@ -14,38 +14,13 @@ const MenuItems = ({ Style }) => (
   </div>
 );
 
-const ThemeBtn = () => {
-  const { theme, setTheme } = useTheme();
-  return (
-    <div className="flex items-center mx-5">
-      <input
-        type="checkbox"
-        name="checkbox"
-        id="checkbox"
-        className="opacity-0 absolute checkbox"
-        onChange={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-      />
-      <label
-        htmlFor="checkbox"
-        className="flex text-white cursor-pointer justify-between w-8 h-4 bg-gray-400 rounded-2xl p-1 relative transform scale-[1.5] label"
-      >
-        <FaSun className="text-[9px] mt-0 pt-0 text-yellow-400" />
-        <FaMoon className="text-[9px] mt-0 pt-0 text-yellow-500" />
-        <div
-          className="w-3 h-3 bg-white absolute rounded-full top-[2px] left-[2px] ball transition duration-500 "
-        />
-      </label>
-    </div>
-  );
-};
-
 const Navbar = () => {
   const [navShow, setNavShow] = useState(false);
 
   return (
     <>
       <div
-        className="h-12 bg-cr-white dark:bg-cr-black text-cr-black shadow dark:text-cr-white flex justify-between px-10 items-center"
+        className="h-12 bg-cr-white dark:bg-cr-black text-cr-black shadow dark:text-cr-white flex justify-between px-10 items-center sticky top-0 z-20 md:relative"
       >
         <Link href="/" className=" mx-1 hover:text-fuchsia-800 duration-500">
           <div className="text-2xl font-bold flex flex-row items-center">
@@ -97,7 +72,7 @@ const Navbar = () => {
 
       {navShow && (
       <div
-        className="bg-cr-black dark:bg-cr-white absolute w-screen cr-h-nav transition-all duration-500 md:hidden px-2 flex flex-col justify-between"
+        className="bg-cr-black dark:bg-cr-white fixed w-screen min-h-cr-92 transition-all duration-500 md:hidden px-2 flex flex-col justify-between"
       >
         <div className="py-3 flex justify-end">
           <ThemeBtn />

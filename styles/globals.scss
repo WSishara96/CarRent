@@ -20,5 +20,17 @@
 
 // theme change button
 .checkbox:checked + .label .ball{
-  transform: translateX(16px);
+  transform: translateX(16px) !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e1e27;
 }
