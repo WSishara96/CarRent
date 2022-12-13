@@ -24,7 +24,7 @@ const Home = () => (
                     believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
                     anything embarrassing hidden in the middle of text.
                 </p>
-                <div className="my-8">
+                <div className="my-8 w-fit mx-auto">
                     <ImgCraousel />
                 </div>
             </div>

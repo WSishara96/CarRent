@@ -34,3 +34,136 @@
 ::-webkit-scrollbar-thumb {
   background: #1e1e27;
 }
+
+// vehicle card
+.vehicle {
+
+  h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+
+  .product_ct {
+    font-size: 22px;
+    text-align: center;
+    padding: 8px;
+    text-transform: uppercase;
+  }
+
+  img {
+    width: 220px !important;
+    object-fit: contain;
+    position: absolute;
+    transition: all 0.5s ease;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-60%);
+  }
+
+  .lower {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    background: transparent;
+    position: relative;
+    transform: translatey(60%);
+    transition: all 0.5s ease;
+    height: 300px;
+  }
+
+  .feature {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .feature_list {
+      margin-top: 10px;
+      padding: 35px;
+      list-style: none;
+      opacity: 0;
+      width: 100%;
+      transition: all 0.5s ease;
+
+      li {
+        position: relative;
+        font-weight: 400;
+        line-height: 100%;
+        padding-bottom: 5px;
+        font-size: 14px;
+        text-align: left;
+        color: #282828;
+      }
+
+      li:before {
+        position: absolute;
+        content: "\25cf";
+        width: 10px;
+        height: 10px;
+        left: -15px;
+        top: 4px;
+        color: red;
+      }
+    }
+
+    .see_more {
+      position: absolute;
+      width: 100%;
+      top: 160px;
+      z-index: 10;
+      text-align: center;
+
+      a {
+        color: #585858;
+        border-bottom: 2px solid #fff;
+      }
+
+      a:hover {
+        color: #000;
+        border-bottom: 2px solid rgb(153, 153, 153);
+        transition: 1s;
+      }
+    }
+  }
+}
+
+.inner {
+  height: 500px;
+  background: rgb(26, 26, 26);
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.vehicle:hover {
+  .lower {
+    transform: translateY(25%);
+    background: #fff;
+  }
+
+  .feature_list {
+    opacity: 1;
+  }
+
+  span {
+    transform: translateY(35px);
+  }
+
+  .content h2 {
+    opacity: 0;
+  }
+
+  img {
+    width: 160px !important;
+  }
+
+  .cta {
+    background: white;
+    color: #151514;
+  }
+}
